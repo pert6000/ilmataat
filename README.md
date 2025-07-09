@@ -1,0 +1,2 @@
+- Checks if there are competitions on certain discgolf courses
+- provides the user with weather data from the course they are interested in
