@@ -8,6 +8,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service
 import time
 from datetime import datetime
+from flaskr.yr_api import weather_data
 
 
 def init_driver():
@@ -80,8 +81,8 @@ def raja_info(driver, raja_link):
 
 
 def extract_coords(link):
-    lat = link[(link.rfind('/') + 1):(link.rfind('/') + 8)]
-    lon = link[(link.rfind(',') + 1):(link.rfind(',') + 8)]
+    lat = link[(link.rfind('/') + 1):(link.rfind('/') + 7)]
+    lon = link[(link.rfind(',') + 1):(link.rfind(',') + 7)]
 
     return [lat, lon]
 
@@ -161,6 +162,8 @@ def main():
 
     info = raja_info(driver, rajad[0][1])
     voistlused = leia_layoutid(driver, info[1])
+    print("Siin on soovitud raja tänane ilmateade:")
+    print(weather_data(info[0][0], info[0][1]))
 
     if len(voistlused) == 0:
         print("Sellel rajal täna võistlusi pole")
@@ -176,9 +179,3 @@ def main():
 #print(leia_layoutid("https://discgolfmetrix.com/course/40801"))
 if __name__ == '__main__':
     main()
-
-
-
-"https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=58&lon=25"
-
-

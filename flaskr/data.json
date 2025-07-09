@@ -1,0 +1,75 @@
+{
+    "units": {
+        "air_temperature": "celsius",
+        "precipitation_amount": "mm",
+        "wind_speed": "m/s"
+    },
+    "data": [
+        {
+            "lat": 55.5,
+            "lon": 25.2,
+            "expires": "Wed, 09 Jul 2025 21:13:36 GMT",
+            "last_modified": "Wed, 09 Jul 2025 20:42:31 GMT",
+            "timeseries": [
+                {
+                    "time": "2025-07-09 22:00:00",
+                    "air_temperature": 14.8,
+                    "wind_speed": 5.7,
+                    "symbol_code": "lightrain",
+                    "precipitation_amount": 0.2
+                },
+                {
+                    "time": "2025-07-09 23:00:00",
+                    "air_temperature": 14.7,
+                    "wind_speed": 5.1,
+                    "symbol_code": "lightrain",
+                    "precipitation_amount": 0.3
+                }
+            ]
+        },
+        {
+            "lat": 58,
+            "lon": 22.2,
+            "expires": "Wed, 09 Jul 2025 21:17:32 GMT",
+            "last_modified": "Wed, 09 Jul 2025 20:46:27 GMT",
+            "timeseries": [
+                {
+                    "time": "2025-07-09 22:00:00",
+                    "air_temperature": 15.6,
+                    "wind_speed": 3.6,
+                    "symbol_code": "partlycloudy_night",
+                    "precipitation_amount": 0.0
+                },
+                {
+                    "time": "2025-07-09 23:00:00",
+                    "air_temperature": 15.2,
+                    "wind_speed": 4.2,
+                    "symbol_code": "partlycloudy_night",
+                    "precipitation_amount": 0.0
+                }
+            ]
+        },
+        {
+            "lat": 59.172,
+            "lon": 24.762,
+            "expires": "Wed, 09 Jul 2025 21:30:28 GMT",
+            "last_modified": "Wed, 09 Jul 2025 20:59:53 GMT",
+            "timeseries": [
+                {
+                    "time": "2025-07-09 22:00:00",
+                    "air_temperature": 15.1,
+                    "wind_speed": 2.4,
+                    "symbol_code": "partlycloudy_night",
+                    "precipitation_amount": 0.0
+                },
+                {
+                    "time": "2025-07-09 23:00:00",
+                    "air_temperature": 14.4,
+                    "wind_speed": 2.5,
+                    "symbol_code": "partlycloudy_night",
+                    "precipitation_amount": 0.0
+                }
+            ]
+        }
+    ]
+}

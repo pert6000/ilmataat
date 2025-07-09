@@ -1,0 +1,5 @@
+python-dotenv
+requests
+selenium
+bs4
+webdriver_manager
